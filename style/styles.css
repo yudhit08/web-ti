@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.menu-footer{
+  padding: 10px 0px;
+  display: flex;
+  border-bottom-width: 1.5px ;
+  border-bottom-style: solid;
+  border-color: white;
+}
+.menu-footer a{
+  color: white;
+}
+@media (max-width: 768px) { 
+  .footer-body{
+    text-align: center;
+  }
+  .menu-footer{
+    border-bottom-style: none;
+    justify-content: center;
+  }.menu{
+    justify-content: center;
+  }.menu-footer-laman ul{
+    padding: 0;
+  }
+}
