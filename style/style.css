@@ -245,7 +245,12 @@ button.readmore-btn:hover i {
 
 @media screen and (max-width: 992px){
     .banner-kontainer img {
-        width: 56px;
+        width: 40px;
+    }
+
+    .banner-kontainer p {
+        font-size: .8rem;
+        font-weight: 500;
     }
 
     .navbar-top {
@@ -317,7 +322,7 @@ button.readmore-btn:hover i {
     }
 
     main.home {
-        margin-top: 70px;
+        margin-top: 55px;
     }
 
     .hightlight-news .ket {
