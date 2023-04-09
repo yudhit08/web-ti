@@ -67,6 +67,10 @@ li {
     color: white;
 }
 
+.navbar-top-mobile li.nav-item a {
+    color: black;
+}
+
 .navbar-btm {
     display: flex;
     align-items: center;
@@ -277,7 +281,8 @@ button.readmore-btn:hover i {
         color: black;
         position: relative;
         z-index: 10;
-        top: 50px;
+        top: 60px;
+        right: 20px;
         padding: 20px;
         margin: 0;
     }
@@ -347,7 +352,7 @@ button.readmore-btn:hover i {
     }
     
     .kemitraan-container img {
-        width: 100px;
+        width: clamp(50px, 100px, 10vw);
     }
 
     .footer-body {

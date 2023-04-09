@@ -41,6 +41,8 @@ function handleHeader() {
 		}
 	});
 
+    onresize()
+
 	topHeaderMobile.style.display = "none";
 	topHeaderToggle.addEventListener("click", () => {
 		if (topHeaderMobile.style.display === "none") {
@@ -48,7 +50,7 @@ function handleHeader() {
 		} else {
 			topHeaderMobile.style.display = "none";
 		}
-		console.log(topHeaderMobile.style.display);
+		// console.log(topHeaderMobile.style.display);
 	});
 
 	btmHeaderToggle.addEventListener("click", () => {
@@ -57,7 +59,7 @@ function handleHeader() {
 		} else {
 			btmHeaderMobile.style.display = "none";
 		}
-		console.log(btmHeaderMobile.style.display);
+		// console.log(btmHeaderMobile.style.display);
 	});
 }
 
