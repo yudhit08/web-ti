@@ -248,6 +248,10 @@ button.readmore-btn:hover i {
         width: 40px;
     }
 
+    .toggle {
+        display: flex;
+    }
+
     .banner-kontainer p {
         font-size: .8rem;
         font-weight: 500;
