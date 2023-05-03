@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style-content.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#banner').load('banner.html', function(){
+          $('#content').text('Akreditasi');
+        });
+        $('#footer').load('footer.html');
+      });
+    </script>
+  </script>
+  <title>Akreditasi</title>
+  </head>
+
+  <body>
+    
+    <div id="header"></div>
+    <div id="banner"></div>
+    <main>
+      <div class="content container my-5 vw-100">
+        <h2 class="section-title fw-bold">Akreditasi</h2>
+        <div class="hightlight-news d-flex gap-3 mt-3 flex-wrap"></div>
+        <div class="container con-image">
+          <div class="akreditasi">
+            <img src="./assets/image/sejarah.jpeg" alt="sejarah"  width="100%"/>
+            <p class="isi mb-3 mt-5">Sertifikat Akreditasi Teknik Informatika</p>
+            <button class="btn btn-primary btn-akre mb-5"  href="">Download</button>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <div id="footer"></div>
+    <script src="./script/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

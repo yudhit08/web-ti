@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style-content.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#banner').load('banner.html', function(){
+          $('#content').text('Sejarah');
+        });
+        $('#footer').load('footer.html');
+      });
+    </script>
+  </script>
+  <title>Sejarah</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div id="banner"></div>
+    <main>
+      <div class="content container my-5 vw-100">
+        <h2 class="section-title fw-bold">Sejarah</h2>
+          <img src="./assets/image/sejarah.jpeg" alt="sejarah" />
+          <p class="isi mb-0 mt-3">
+            Program Studi Teknik Informatika merupakan salah satu program studi sarjana yang ada di Universitas Riau (UNRI). Program Studi Teknik Informatika berada di bawah Jurusan Teknik Elektro. Program Studi Teknik Informatika bisa dikatakan sebagai program studi yang masih muda dibandingkan dengan Program Studi lain yang ada di Fakultas Teknik.
+          </p>
+          <p class="isi mb-0">
+            Program Studi Teknik Informatika didirikan pada tahun 2013 dengan SK No: 485/E/O/2013. SK pendiriannya tertanggal 18 Oktober 2013. Kemudian Program Studi Teknik Informatika mulai beroperasi pada bulan Juli 2014 sampai dengan sekarang.
+          </p>
+          <p class="isi mb-0">
+            Program Studi Teknik Informatika memiliki 3 konsentrasi, yaitu Komputasi Cerdas dan Visualisasi (KCV), Rekayasa Perangkat Lunak (RPL), dan Komputasi Berbasis Jaringan (KBJ). Lulusan Program Studi Teknik Informatika mendapatkan gelar S.T. (Sarjana Teknik). Program Studi Teknik Informatika menghasilkan lulusanya yang unggul.
+          </p>
+          <p class="isi mb-0">
+            Tahun 2019 Program Studi Teknik Informatika sudah mendapatkan akreditas “B” dengan SK BAN-PT No. 2693/SK/BAN-PT/Akred/S/VII/2019.
+          </p>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--expand-less ipc-icon--inline ipc-chip__pre-icon" id="iconContext-expand-less" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11.29 8.71L6.7 13.3a.996.996 0 1 0 1.41 1.41L12 10.83l3.88 3.88a.996.996 0 1 0 1.41-1.41L12.7 8.71a.996.996 0 0 0-1.41 0z"></path>
+        </svg>
+      </button>
+    </main>
+    <div id="footer"></div>
+    <script src="./script/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

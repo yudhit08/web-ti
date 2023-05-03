@@ -176,7 +176,7 @@ a.read-more::after {
 .news a.read-more::after {
     width: 160px;
 }
-
+.btn-akre, 
 button.readmore-btn {
     background-color: var(--dark-blue);
     color: #ffffff;
@@ -189,7 +189,7 @@ button.readmore-btn {
     outline: none;
     border: none;
 }
-
+.btn-akre:hover,
 button.readmore-btn:hover {
     background-color: var(--darken-blue);
 }
@@ -242,7 +242,53 @@ button.readmore-btn:hover i {
     height: 2px;
     background-color: #ffffff;
 }
-
+.carousel-caption{
+    right: 7%;
+    text-align: right;
+}
+#back-to-top{
+    background:#1a2c43;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+p.isi li.isi{
+    line-height: 30px;
+    opacity: .7;
+}
+.link-dosen{
+    display: block;
+    text-align: center;
+}
+.linksocial-dosen{
+    display: inline-block;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+.foto-dosen{
+    border-radius: 50%;
+    padding: 20px;
+}.list{
+    list-style: decimal;
+}
+.bullet{
+    list-style-type: disc;
+}
+.con-image{
+    position: relative;
+    height: 90vh;
+}
+.akreditasi{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
 @media screen and (max-width: 992px){
     .banner-kontainer img {
         width: 40px;
@@ -251,7 +297,10 @@ button.readmore-btn:hover i {
     .toggle {
         display: flex;
     }
-
+    .con-image{
+        position: relative;
+        height: 50vh;
+    }
     .banner-kontainer p {
         font-size: .8rem;
         font-weight: 500;
@@ -380,4 +429,5 @@ button.readmore-btn:hover i {
     .footer-body .social {
         align-self: center;
     }
+
 }

@@ -1,0 +1,12 @@
+.sc-about .post .post-content .entry-content p {
+  margin-bottom: 15px;
+}
+.sc-about--menu .widget_menu {
+  margin-bottom: 0;
+}
+
+.sc-about--menu .menu-box {
+  background-color: #f8f9fb;
+  padding: 20px 24px 0 24px;
+  max-width: 300px;
+}
