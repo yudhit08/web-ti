@@ -279,7 +279,7 @@ p.isi li.isi{
 }
 .con-image{
     position: relative;
-    height: 90vh;
+    height: 100vh;
 }
 .akreditasi{
     width: 80%;
@@ -288,6 +288,9 @@ p.isi li.isi{
     top: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+}
+.foto{
+    width: 300px;
 }
 @media screen and (max-width: 992px){
     .banner-kontainer img {
@@ -299,7 +302,7 @@ p.isi li.isi{
     }
     .con-image{
         position: relative;
-        height: 50vh;
+        height: 60vh;
     }
     .banner-kontainer p {
         font-size: .8rem;
@@ -399,6 +402,9 @@ p.isi li.isi{
         width: 100%;
     }
 
+    .news img {
+        max-width: 150px;
+    }
     .news img {
         max-width: 150px;
     }
