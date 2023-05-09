@@ -1,3 +1,7 @@
 .berita-container {
     margin-top: 180px;
 }
+
+.berita {
+    flex: 0 1 800px;
+}
