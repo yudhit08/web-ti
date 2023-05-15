@@ -10,18 +10,112 @@
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
       $(function () {
         $('#header').load('header.html');
         $('#footer').load('footer.html');
       });
-    </script>
+    </script> -->
     <title>Teknik Informatika</title>
   </head>
 
   <body>
-    <div id="header"></div>
+    <div class="header position-fixed top-0 z-3 vw-100">
+        <div class="d-flex gap-lg-3 gap-2 flex-column align-items-center justify-content-center py-2 px-lg-3 px-2 z-2 position-absolute banner-kontainer">
+            <img src="./assets/logo.png" />
+            <p class="text-light block text-center my-auto">S1 TEKNIK <br /> INFORMATIKA
+            </p>
+        </div>
+        <div style="background-color: #1a2c43;">
+            <nav class="navbar-top container" style="background-color: #1a2c43;">
+                <div class="navbar-top-menu w-100" id="navbarTop">
+                    <ul class="d-flex mb-0 align-items-center justify-content-end gap-4 py-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" style="font-size: .8rem;">Universitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: .8rem;" href="#">Fakultas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: .8rem;" href="#">Jurusan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="font-size: .8rem;">
+                                <img src="./assets/image/indonesia.png" alt="bendera-indonesia"
+                                    style="width: 20px; margin-right: 5px;" />
+                                Indonesia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar-top-mobile container" style="background-color: #1a2c43;">
+                <div class="navbar-top-menu w-100" id="navbarTop">
+                    <ul class="d-flex mb-0 gap-4 py-2 rounded-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" style="font-size: .8rem;">Universitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: .8rem;" href="#">Fakultas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: .8rem;" href="#">Jurusan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="font-size: .8rem;">
+                                <img src="./assets/image/indonesia.png" alt="bendera-indonesia"
+                                    style="width: 20px; margin-right: 5px;" />
+                                Indonesia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div style="background-color: #073c64;">
+            <nav class="container py-lg-4 py-3"
+                style="background-color: #073c64;">
+                <div class="container-fluid navbar-btm">
+                    <div class="toggle gap-4">
+                        <div class="btm-menu-toggler" type="button" aria-label="Toggle navigation">
+                            <i class="fas fa-bars fs-5 text-light"></i>
+                        </div>
+                        <div class="top-menu-toggler text-center px-0" type="button" aria-label="Toggle navigation">
+                            <i class="fas fa-ellipsis-v fs-5 text-light"></i>
+                        </div>
+                    </div>
+                    <div class="navbar-btm-menu" id="navbar-btm">
+                        <ul class="mb-2 w-100 gap-3 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" style="color: rgb(255, 181, 44);" aria-current="page"
+                                    href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Profil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Akademik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sertifikasi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galeri</a>
+                            </li>
+                            <form>
+                                <input class="form-control ms-lg-3 text-light" type="search" placeholder="Search"
+                                    aria-label="Search"
+                                    style="border-radius: 10px; background-color: #1a2c43; outline: none; border: none;">
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
     <main class="home">
       <div id="hero" class="carousel slide z-1">
         <div class="carousel-inner">
@@ -107,8 +201,55 @@
         </svg>
       </button>
     </main>
-    <div id="footer"></div>
+    <footer class="footer" style="background-color: rgb(7,60,100); color: white;">
+        <div class="footer-body p-5 container d-flex justify-content-between mx-auto w-100 flex-wrap">
+            <div class="section-box">
+                <a href="" class="footer-brand">
+                    <img src="assets/logo.png" class="mb-3" style="width: 100px;" alt="Teknik Informatika">
+                </a>
+                <h5 class="mt-1 mb-3 fw-semibold">TEKNIK INFORMATIKA</h5>
+                <p>Fakultas Teknik Universitas Riau <br />
+                    Kampus Binawidya <br />
+                    JL. HR Soebrantas KM 12.5 <br />
+                    Simpang Baru, Binawidya <br />
+                    Pekanbaru - 28293
+                </p>
+            </div>
+            <div class="section-box">
+                <div class="widget-header">
+                    <h5 class="title">TEKNIK INFORMATIKA</h5>
+                </div>
+                <div class="menu-footer-laman">
+                    <a href="">Event</a>
+                    <a href="">Prestasi Mahasiswa</a>
+                    <a href="">Berita</a>
+                    <a href="">Tutorial</a>
+                </div>
+            </div>
+            <div class="section-box">
+                <div class="widget-header">
+                    <h5 class="title">LINK TERKAIT</h5>
+                </div>
+                <div class="menu-footer-laman">
+                    <a href="">Beasiswa</a>
+                    <a href="">Konferensi Internasional</a>
+                    <a href="">Tracer Study</a>
+                    <a href="">Kontak</a>
+                    <div class="social d-flex gap-4 mt-5 fs-5">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer p-2" style="background-color: rgb(26,44,67)">
+            <div class="copyright text-center">Copyright All Right Reserved 2023<a href=""></a></div>
+        </div>
+    </footer>
 
     <script src="./script/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js" ></script>
   </body>
 </html>
