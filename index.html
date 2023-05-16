@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
       $(function () {
         $('#header').load('header.html');
@@ -18,35 +21,35 @@
       });
     </script>
     <title>Teknik Informatika</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="header"></div>
     <main class="home">
-      <div id="hero" class="carousel slide z-1">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/image/carousel0.webp" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/image/carousel1.webp" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/image/carousel2.webp" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/image/carousel3.png" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        <div id="hero" class="carousel slide z-1">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/image/carousel0.webp" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/image/carousel1.webp" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/image/carousel2.webp" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/image/carousel3.png" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>        
       <div class="content container my-5 vw-100">
         <h2 class="section-title fw-bold">Berita dan Kegiatan</h2>
         <div class="hightlight-news d-flex gap-4 mt-3 flex-wrap">
@@ -126,20 +129,20 @@
             <button class="readmore-btn m-auto">Selengkapnya</button>
           </div>
         </div>
-        <div class="container-pelatihan flex-row-reverse" style="background-color: white">
+        <div class="container-pelatihan" style="background-color: white">
+          
+          <div class="ps-5 text-wrapper">
+            <h2 class="sub-title fw-bold">Pelatihan</h2>
+            <p class="pe-5 pt-3 pb-3" style="line-height: 30px">
+              menyediakan berbagai program pelatihan dan pengembangan diri yang bertujuan untuk meningkatkan keterampilan dan kompetensi mahasiswa dalam menghadapi persaingan di dunia kerja. 
+            </p>
+            <button class="readmore-btn m-auto">Selengkapnya</button>
+          </div>
           <div class="image-wrapper-pelatihan">
             <img src="assets/image/pelatihan.jpg" alt="Gambar" />
             <div class="small-img">
               <img class="small-img" src="assets/image/pelatihan2.jpeg" alt="Gambar" width="" />
             </div>
-          </div>
-          <div class="ps-5 text-wrapper">
-            <h2 class="sub-title fw-bold">Pelatihan</h2>
-            <p class="pe-5 pt-3 pb-3" style="line-height: 30px">
-              menyediakan berbagai program pelatihan dan pengembangan diri yang bertujuan untuk meningkatkan keterampilan dan kompetensi mahasiswa dalam menghadapi persaingan di dunia kerja. Program-program ini dirancang dengan
-              mempertimbangkan perkembangan teknologi dan tren industri terkini, sehingga mahasiswa dapat memiliki kemampuan yang sesuai dengan kebutuhan pasar kerja.
-            </p>
-            <button class="readmore-btn m-auto">Selengkapnya</button>
           </div>
         </div>
         <h2 class="section-title fw-bold my-5">Kemitraan</h2>
@@ -160,9 +163,16 @@
           <path d="M11.29 8.71L6.7 13.3a.996.996 0 1 0 1.41 1.41L12 10.83l3.88 3.88a.996.996 0 1 0 1.41-1.41L12.7 8.71a.996.996 0 0 0-1.41 0z"></path>
         </svg>
       </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     </main>
     <div style="margin-top: 100px" id="footer"></div>
 
     <script src="./script/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <script src="./script/script.js"></script>
+</body>
+
 </html>
