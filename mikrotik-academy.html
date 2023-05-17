@@ -17,9 +17,10 @@
     <script>
         $(function () {
             $('#header').load('header.html');
-            $('#banner').load('banner.html', function () {
-                $('#content').text('Mikrotik Academy');
+            $('#banner').load('banner.html', function(){
+            $('#content').text('Mikrotik Academy');
             });
+            $('#sidebar').load('sidebar.html');
             $('#footer').load('footer.html');
         });
     </script>
@@ -33,28 +34,33 @@
     <div id="banner"></div>
     <main>
         <div class="content container my-5 vw-100">
-            <h2 class="section-title fw-bold">Mikrotik Academy</h2>
-            <div class="d-flex align-items-center justify-content-center w-100">
-                <img src="./assets/image/mikrotik-academy.webp" alt="" srcset="">
-            </div>
-            <div class="text">
-                <p class="mt-5">Mikrotik Academy Universitas Riau (UNRI) adalah program kerjasama antara Fakultas Teknik dengan MikroTik untuk dapat menyelenggarakan pendidikan/pelatihan Mikrotik bagi mahasiswa UNRI beserta penyelenggaraan ujian sertifikasi internasional Mikrotik (MTCNA-MikroTik Certified Network Associate).</p>
-                <p>Saat ini Mikrotik Academy UNRI memiliki 2 kategori kelas yaitu:</p>
-                <ol>
-                    <li>Kelas Regular: Kelas yang diperuntukkan khusus untuk mahasiswa pordi S1 Teknik Informatika dimana materi mikrotik sudah tergabung dengan kurikulum prodi.</li>
-                    <li>Kelas Request: Kelas yang diperuntukkan bagi mahasiswa UNRI diluar prodi Teknik Informatika, dengan bentuk pelatihan/ ekstrakurikuler dengan jangka waktu tertentu.</li>
-                </ol>
-                <h6 class="mt-5">Personil</h6>
-                <p>Mikrotik Academy telah memiliki Tenaga Pengajar yang tersertifikasi dari mikrotik dan telah berpengalaman dalam bidang networking :</p>
-                <ul>
-                    <li>Linna Oktaviana Sari, ST.,MT (MTCNA, MTCRE)</li>
-                </ul>
-                <h6 class="mt-5">Kontak</h4>
-                <p>MIKROTIK ACADEMY FAKULTAS TEKNIK – UNIVERSITAS RIAU</p>
-                <p>Laboratorium Komputer dan Jaringan- Jurusan Teknik Elektro</p>
-                <p>Kampus Bina Widya Km 12,5 Simpang Baru</p>
-                <p>Pekanbaru, Riau, 28293</p>
-                <p>Phone/Wa : +628128442849</p>
+            <div class="container-konten gap-5">
+                <div class="container">
+                    <h2 class="section-title fw-bold">Mikrotik Academy</h2>
+                    <div class="d-flex align-items-center justify-content-center w-100">
+                        <img src="./assets/image/mikrotik-academy.webp" alt="" srcset="">
+                    </div>
+                    <div class="text">
+                        <p class="mt-5">Mikrotik Academy Universitas Riau (UNRI) adalah program kerjasama antara Fakultas Teknik dengan MikroTik untuk dapat menyelenggarakan pendidikan/pelatihan Mikrotik bagi mahasiswa UNRI beserta penyelenggaraan ujian sertifikasi internasional Mikrotik (MTCNA-MikroTik Certified Network Associate).</p>
+                        <p>Saat ini Mikrotik Academy UNRI memiliki 2 kategori kelas yaitu:</p>
+                        <ol>
+                            <li>Kelas Regular: Kelas yang diperuntukkan khusus untuk mahasiswa pordi S1 Teknik Informatika dimana materi mikrotik sudah tergabung dengan kurikulum prodi.</li>
+                            <li>Kelas Request: Kelas yang diperuntukkan bagi mahasiswa UNRI diluar prodi Teknik Informatika, dengan bentuk pelatihan/ ekstrakurikuler dengan jangka waktu tertentu.</li>
+                        </ol>
+                        <h6 class="mt-5">Personil</h6>
+                        <p>Mikrotik Academy telah memiliki Tenaga Pengajar yang tersertifikasi dari mikrotik dan telah berpengalaman dalam bidang networking :</p>
+                        <ul>
+                            <li>Linna Oktaviana Sari, ST.,MT (MTCNA, MTCRE)</li>
+                        </ul>
+                        <h6 class="mt-5">Kontak</h4>
+                        <p>MIKROTIK ACADEMY FAKULTAS TEKNIK – UNIVERSITAS RIAU</p>
+                        <p>Laboratorium Komputer dan Jaringan- Jurusan Teknik Elektro</p>
+                        <p>Kampus Bina Widya Km 12,5 Simpang Baru</p>
+                        <p>Pekanbaru, Riau, 28293</p>
+                        <p>Phone/Wa : +628128442849</p>
+                    </div>
+                </div>
+                <div id="sidebar"></div>
             </div>
         </div>
     </main>

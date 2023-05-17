@@ -16,8 +16,9 @@
       $(function () {
         $('#header').load('header.html');
         $('#banner').load('banner.html', function(){
-          $('#content').text('Sejarah');
+        $('#content').text('Sejarah');
         });
+        $('#sidebar').load('sidebar.html');
         $('#footer').load('footer.html');
       });
     </script>
@@ -30,20 +31,27 @@
     <div id="banner"></div>
     <main>
       <div class="content container my-5 vw-100">
-        <h2 class="section-title fw-bold">Sejarah</h2>
-          <img src="./assets/image/sejarah.jpeg" alt="sejarah" />
-          <p class="isi mb-0 mt-3">
-            Program Studi Teknik Informatika merupakan salah satu program studi sarjana yang ada di Universitas Riau (UNRI). Program Studi Teknik Informatika berada di bawah Jurusan Teknik Elektro. Program Studi Teknik Informatika bisa dikatakan sebagai program studi yang masih muda dibandingkan dengan Program Studi lain yang ada di Fakultas Teknik.
-          </p>
-          <p class="isi mb-0">
-            Program Studi Teknik Informatika didirikan pada tahun 2013 dengan SK No: 485/E/O/2013. SK pendiriannya tertanggal 18 Oktober 2013. Kemudian Program Studi Teknik Informatika mulai beroperasi pada bulan Juli 2014 sampai dengan sekarang.
-          </p>
-          <p class="isi mb-0">
-            Program Studi Teknik Informatika memiliki 3 konsentrasi, yaitu Komputasi Cerdas dan Visualisasi (KCV), Rekayasa Perangkat Lunak (RPL), dan Komputasi Berbasis Jaringan (KBJ). Lulusan Program Studi Teknik Informatika mendapatkan gelar S.T. (Sarjana Teknik). Program Studi Teknik Informatika menghasilkan lulusanya yang unggul.
-          </p>
-          <p class="isi mb-0">
-            Tahun 2019 Program Studi Teknik Informatika sudah mendapatkan akreditas “B” dengan SK BAN-PT No. 2693/SK/BAN-PT/Akred/S/VII/2019.
-          </p>
+        <div class="container-konten gap-5">
+          <div class="container">
+            <h2 class="section-title fw-bold">Sejarah</h2>
+              <div class="text-center">
+                <img src="./assets/image/sejarah.jpeg" alt="sejarah" />
+              </div>
+              <p class="isi mb-0 mt-3">
+                Program Studi Teknik Informatika merupakan salah satu program studi sarjana yang ada di Universitas Riau (UNRI). Program Studi Teknik Informatika berada di bawah Jurusan Teknik Elektro. Program Studi Teknik Informatika bisa dikatakan sebagai program studi yang masih muda dibandingkan dengan Program Studi lain yang ada di Fakultas Teknik.
+              </p>
+              <p class="isi mb-0">
+                Program Studi Teknik Informatika didirikan pada tahun 2013 dengan SK No: 485/E/O/2013. SK pendiriannya tertanggal 18 Oktober 2013. Kemudian Program Studi Teknik Informatika mulai beroperasi pada bulan Juli 2014 sampai dengan sekarang.
+              </p>
+              <p class="isi mb-0">
+                Program Studi Teknik Informatika memiliki 3 konsentrasi, yaitu Komputasi Cerdas dan Visualisasi (KCV), Rekayasa Perangkat Lunak (RPL), dan Komputasi Berbasis Jaringan (KBJ). Lulusan Program Studi Teknik Informatika mendapatkan gelar S.T. (Sarjana Teknik). Program Studi Teknik Informatika menghasilkan lulusanya yang unggul.
+              </p>
+              <p class="isi mb-0">
+                Tahun 2019 Program Studi Teknik Informatika sudah mendapatkan akreditas “B” dengan SK BAN-PT No. 2693/SK/BAN-PT/Akred/S/VII/2019.
+              </p>
+            </div>
+            <div id="sidebar"></div>
+          </div>
         </div>
       </div>
       <button class="btn btn-primary" id="back-to-top">

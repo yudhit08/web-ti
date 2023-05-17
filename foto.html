@@ -17,9 +17,10 @@
     <script>
         $(function () {
             $('#header').load('header.html');
-            $('#banner').load('banner.html', function () {
-                $('#content').text('Foto');
+            $('#banner').load('banner.html', function(){
+            $('#content').text('Foto');
             });
+            $('#sidebar').load('sidebar.html');
             $('#footer').load('footer.html');
         });
     </script>
@@ -33,33 +34,38 @@
     <div id="banner"></div>
     <main>
         <div class="content container my-5 vw-100">
-            <h2 class="section-title fw-bold">Akreditasi</h2>
-            <div class="container text-center g-3">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <img src="assets/image/foto.jpg" alt="" width="300px" height="200px">
+            <div class="container-konten gap-5">
+                <div class="container">
+                    <h2 class="section-title fw-bold">Akreditasi</h2>
+                    <div class="container text-center g-3">
+                        <div class="row align-items-start g-4">
+                            <div class="col">
+                                <img src="assets/image/foto.jpg" alt="" width="300px" height="200px">
+                            </div>
+                            <div class="col">
+                                <img src="assets/image/foto-2.jpg" alt="" width="300px">
+                            </div>
+                            <div class="col">
+                                <img src="assets/image/foto-3.jpg" alt="" width="300px">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src="assets/image/foto-2.jpg" alt="" width="300px">
-                    </div>
-                    <div class="col">
-                        <img src="assets/image/foto-3.jpg" alt="" width="300px">
+                    <h2 class="section-title fw-bold mt-5">Mikrotik</h2>
+                    <div class="container text-center g-3">
+                        <div class="row align-items-start g-4">
+                            <div class="col">
+                                <img src="assets/image/foto-4.jpeg" alt="" width="300px">
+                            </div>
+                            <div class="col">
+                                <img src="assets/image/foto-5.jpeg" alt="" width="300px">
+                            </div>
+                            <div class="col">
+                                <img src="assets/image/foto-6.jpeg" alt="" width="300px">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h2 class="section-title fw-bold mt-5">Mikrotik</h2>
-            <div class="container text-center g-3">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <img src="assets/image/foto-4.jpeg" alt="" width="300px">
-                    </div>
-                    <div class="col">
-                        <img src="assets/image/foto-5.jpeg" alt="" width="300px">
-                    </div>
-                    <div class="col">
-                        <img src="assets/image/foto-6.jpeg" alt="" width="300px">
-                    </div>
-                </div>
+                <div id="sidebar"></div>
             </div>
         </div>
     </main>

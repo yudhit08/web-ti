@@ -16,8 +16,9 @@
       $(function () {
         $('#header').load('header.html');
         $('#banner').load('banner.html', function(){
-          $('#content').text('Video');
+        $('#content').text('Video');
         });
+        $('#sidebar').load('sidebar.html');
         $('#footer').load('footer.html');
       });
     </script>
@@ -31,12 +32,15 @@
     <div id="banner"></div>
     <main>
       <div class="content container my-5 vw-100">
-        <h2 class="section-title fw-bold mb-5">Video</h2>
-        <iframe src="https://www.youtube.com/embed/ctDxbww6HsE" frameborder="0" width="100%" height="600" allowfullscreen="allowfullscreen"></iframe>
-        <p class="isi mb-3 mt-5 text-center">Video Teknik Informatika</p>
+        <div class="container-konten gap-5">
+          <div class="container">
+            <h2 class="section-title fw-bold mb-5">Video</h2>
+            <iframe src="https://www.youtube.com/embed/ctDxbww6HsE" frameborder="0" width="100%" height="600" allowfullscreen="allowfullscreen"></iframe>
+            <p class="isi mb-3 mt-3 text-center">Video Teknik Informatika</p>
+          </div>
+          <div id="sidebar"></div>
+        </div>
       </div>
-      
-      
     </main>
     <div id="footer"></div>
     <script src="./script/js/bootstrap.bundle.min.js"></script>

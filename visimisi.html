@@ -16,8 +16,9 @@
       $(function () {
         $('#header').load('header.html');
         $('#banner').load('banner.html', function(){
-          $('#content').text('Visi dan Misi');
+        $('#content').text('Visi dan Misi');
         });
+        $('#sidebar').load('sidebar.html');
         $('#footer').load('footer.html');
       });
     </script>
@@ -30,19 +31,23 @@
     <div id="banner"></div>
     <main>
       <div class="content container my-5 vw-100">
-        <h2 class="section-title fw-bold">Visi</h2>
-          <p class="isi mb-0 mt-3">
-            "Menjadi Program Studi Teknik Informatika Terkemuka Berbasis Riset dan Teknologi yang Bermartabat di Kawasan Asia Tenggara pada Tahun 2035."
-          </p>
+        <div class="container-konten gap-5">
+          <div class="container">
+            <h2 class="section-title fw-bold">Visi</h2>
+              <p class="isi mb-0 mt-3">
+                "Menjadi Program Studi Teknik Informatika Terkemuka Berbasis Riset dan Teknologi yang Bermartabat di Kawasan Asia Tenggara pada Tahun 2035."
+              </p>
+            <h2 class="section-title fw-bold mt-5">Misi</h2>
+            <ol type="1" >
+              <li class="isi mb-0 mt-1 list">Menyelenggarakan pendidikan Sarjana dalam bidang ilmu Teknik Informatika, berbasis penelitian dan pengembangan untuk menghasilkan lulusan unggul, profesional dan kompetitif berlandaskan ketaqwaan kepada Tuhan Yang Maha Esa.</li>
+              <li class="isi mb-0 mt-1 list">Melaksanakan kegiatan penelitian dan pengembangan dalam bidang Teknik Informatika berbasis riset  dan Teknologi, Innovatif dan Kreatif baik di lingkungan Nasional maupun Internasional.</li>
+              <li class="isi mb-0 mt-1 list">Melaksanakan pengabdian kepada masyarakat dalam menerapkan teknologi berbasis penelitian berlandaskan budaya Daerah dan Nasional.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan publikasi ilmiah, teknologi dan paten dalam bidang Ilmu Teknik Informatika.</li>
+              <li class="isi mb-0 mt-1 list">Mengembangkan kerjasama yang luas dengan lembaga pendidikan tinggi, instansi pemerintahan dan lembaga lain dalam dan luar negeri.</li>
+            </ol>
+          </div>
+          <div id="sidebar"></div>
         </div>
-        <h2 class="section-title fw-bold mt-5">Misi</h2>
-        <ol type="1" >
-          <li class="isi mb-0 mt-1 list">Menyelenggarakan pendidikan Sarjana dalam bidang ilmu Teknik Informatika, berbasis penelitian dan pengembangan untuk menghasilkan lulusan unggul, profesional dan kompetitif berlandaskan ketaqwaan kepada Tuhan Yang Maha Esa.</li>
-          <li class="isi mb-0 mt-1 list">Melaksanakan kegiatan penelitian dan pengembangan dalam bidang Teknik Informatika berbasis riset  dan Teknologi, Innovatif dan Kreatif baik di lingkungan Nasional maupun Internasional.</li>
-          <li class="isi mb-0 mt-1 list">Melaksanakan pengabdian kepada masyarakat dalam menerapkan teknologi berbasis penelitian berlandaskan budaya Daerah dan Nasional.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan publikasi ilmiah, teknologi dan paten dalam bidang Ilmu Teknik Informatika.</li>
-          <li class="isi mb-0 mt-1 list">Mengembangkan kerjasama yang luas dengan lembaga pendidikan tinggi, instansi pemerintahan dan lembaga lain dalam dan luar negeri.</li>
-        </ol>
       </div>
       <button class="btn btn-primary" id="back-to-top">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--expand-less ipc-icon--inline ipc-chip__pre-icon" id="iconContext-expand-less" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11.29 8.71L6.7 13.3a.996.996 0 1 0 1.41 1.41L12 10.83l3.88 3.88a.996.996 0 1 0 1.41-1.41L12.7 8.71a.996.996 0 0 0-1.41 0z"></path>

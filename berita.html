@@ -17,6 +17,10 @@
     <script>
         $(function () {
             $('#header').load('header.html');
+            $('#banner').load('banner.html', function(){
+            $('#content').text('Berita');
+            });
+            $('#sidebar').load('sidebar.html');
             $('#footer').load('footer.html');
         });
     </script>
@@ -25,87 +29,87 @@
 
 <body>
     <div id="header"></div>
-    <div id="hero-berita" class="carousel slide z-1">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/image/berita-banner.png" class="d-block w-100" alt="banner" />
-            </div>
-        </div>
-    </div>
+    <div id="banner"></div>
+    
     <main>
         <div class="container content my-5 vw-100">
-            <h2 class="section-title fw-bold">Berita dan Kegiatan</h2>
-            <div class="berita-box">
-                <div class="img-box">
-                    <img src="./assets/image/hightlight-news.jpg" alt="">
+            <div class="container-konten gap-5">
+                <div class="container">
+                    <h2 class="section-title fw-bold">Berita</h2>
+                    <div class="berita-box">
+                        <div class="img-box">
+                            <img src="./assets/image/hightlight-news.jpg" alt="">
+                        </div>
+                        <div class="ket-box">
+                            <p class="date">20 Maret 2022</p>
+                            <h3>Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
+                                beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
+                                excepturi illum dolores. Explicabo, inventore.</p>
+                            <a class="read-more berita" href="ani-mardhatillah-mahasiswa-teknik-informatika-juara-1-lomba-mtq-kecamatan.html">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="berita-box">
+                        <div class="img-box">
+                            <img src="./assets/image/berita6.webp" alt="">
+                        </div>
+                        <div class="ket-box">
+                            <p class="date">20 Maret 2022</p>
+                            <h3>Prof Azriyenni Guru Besar Teknik Elektro Pertama di Riau</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
+                                beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
+                                excepturi illum dolores. Explicabo, inventore.</p>
+                            <a class="read-more berita" href="#">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="berita-box">
+                        <div class="img-box">
+                            <img src="./assets/image/berita5.jpg" alt="">
+                        </div>
+                        <div class="ket-box">
+                            <p class="date">20 Maret 2022</p>
+                            <h3>Dr. Irsan Taufik Ali, ST., MT dosen Prodi Teknik Informatika meraih gelar Doktor di bidang Deep
+                                Learning.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
+                                beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
+                                excepturi illum dolores. Explicabo, inventore.</p>
+                            <a class="read-more berita" href="#">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="berita-box">
+                        <div class="img-box">
+                            <img src="./assets/image/berita3.jpg" alt="">
+                        </div>
+                        <div class="ket-box">
+                            <p class="date">20 Maret 2022</p>
+                            <h3> [EVENT] Orientasi Program FGA DTS 2022</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
+                                beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
+                                excepturi illum dolores. Explicabo, inventore.</p>
+                            <a class="read-more berita" href="#">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="berita-box">
+                        <div class="img-box">
+                            <img src="./assets/image/berita2.jpg" alt="">
+                        </div>
+                        <div class="ket-box">
+                            <p class="date">20 Maret 2022</p>
+                            <h3>[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
+                                beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
+                                excepturi illum dolores. Explicabo, inventore.</p>
+                            <a class="read-more berita" href="#">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="num active">1</div>
+                        <div class="num">2</div>
+                        <div class="num">3</div>
+                        <div class="num">4</div>
+                    </div>
                 </div>
-                <div class="ket-box">
-                    <p class="date">20 Maret 2022</p>
-                    <h3>Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
-                        beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
-                        excepturi illum dolores. Explicabo, inventore.</p>
-                    <a class="read-more berita" href="#">Baca Selengkapnya</a>
-                </div>
-            </div>
-            <div class="berita-box">
-                <div class="img-box">
-                    <img src="./assets/image/berita6.webp" alt="">
-                </div>
-                <div class="ket-box">
-                    <p class="date">20 Maret 2022</p>
-                    <h3>Prof Azriyenni Guru Besar Teknik Elektro Pertama di Riau</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
-                        beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
-                        excepturi illum dolores. Explicabo, inventore.</p>
-                    <a class="read-more berita" href="#">Baca Selengkapnya</a>
-                </div>
-            </div>
-            <div class="berita-box">
-                <div class="img-box">
-                    <img src="./assets/image/berita5.jpg" alt="">
-                </div>
-                <div class="ket-box">
-                    <p class="date">20 Maret 2022</p>
-                    <h3>Dr. Irsan Taufik Ali, ST., MT dosen Prodi Teknik Informatika meraih gelar Doktor di bidang Deep
-                        Learning.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
-                        beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
-                        excepturi illum dolores. Explicabo, inventore.</p>
-                    <a class="read-more berita" href="#">Baca Selengkapnya</a>
-                </div>
-            </div>
-            <div class="berita-box">
-                <div class="img-box">
-                    <img src="./assets/image/berita3.jpg" alt="">
-                </div>
-                <div class="ket-box">
-                    <p class="date">20 Maret 2022</p>
-                    <h3> [EVENT] Orientasi Program FGA DTS 2022</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
-                        beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
-                        excepturi illum dolores. Explicabo, inventore.</p>
-                    <a class="read-more berita" href="#">Baca Selengkapnya</a>
-                </div>
-            </div>
-            <div class="berita-box">
-                <div class="img-box">
-                    <img src="./assets/image/berita2.jpg" alt="">
-                </div>
-                <div class="ket-box">
-                    <p class="date">20 Maret 2022</p>
-                    <h3>[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus id distinctio reiciendis
-                        beatae optio eum autem, voluptatibus consectetur assumenda quod enim corrupti, quae fugit
-                        excepturi illum dolores. Explicabo, inventore.</p>
-                    <a class="read-more berita" href="#">Baca Selengkapnya</a>
-                </div>
-            </div>
-            <div class="pagination">
-                <div class="num active">1</div>
-                <div class="num">2</div>
-                <div class="num">3</div>
-                <div class="num">4</div>
+                <div id="sidebar"></div>
             </div>
         </div>
     </main>

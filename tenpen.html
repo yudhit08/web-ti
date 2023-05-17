@@ -16,8 +16,9 @@
       $(function () {
         $('#header').load('header.html');
         $('#banner').load('banner.html', function(){
-          $('#content').text('Tenaga Kependidikan');
+        $('#content').text('Tenaga Kependidikan');
         });
+        $('#sidebar').load('sidebar.html');
         $('#footer').load('footer.html');
       });
     </script>
@@ -30,58 +31,63 @@
     <div id="banner"></div>
     <main>
       <div class="content container my-5 vw-100">
-        <h2 class="section-title fw-bold">Tenaga Kependidikan</h2>
-        <div class="hightlight-news d-flex gap-3 my-3 flex-wrap">
-          <div class="container mt-5">
-            <div class="row justify-content-center align-items-center g-md-5 g-3">
-              <div class="col-lg-4 col-sm-5">
-                <div class="card">
-                  <img class="foto-dosen" src="https://via.placeholder.com/150" alt="Foto Profil">
-                  <div class="card-body text-center">
-                    <h3 class="card-title">Nama Lengkap</h3>
-                    <p class="card-text">Pendidikan</p>
-                    <p class="card-text">S1-Universitas Riau <br> S2-Universitas Riau</p>
-                    <p class="card-text">Bidang Keahlian</p>
-                    <p class="card-text">Internet of Things<br>Software Engineering<br>UI/UX</p>
-                    <div class="link-dosen">
-                      <a target="_blank" class="linksocial-dosen" href="https://www.edisusilo.com/" title="www.edisusilo.com">
-                        <img alt="www.edisusilo.com" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/website.png">
-                      </a>
-                      <a target="_blank" class="linksocial-dosen" href="https://sinta.ristekbrin.go.id/authors/detail?id=6723247&amp;view=overview" title="SINTA">
-                        <img alt="SINTA" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
-                      </a>
-                      <a target="_blank" class="linksocial-dosen" href="https://pddikti.kemdikbud.go.id/data_dosen/RDFFRjdCOUQtRkM5My00NzlFLTk4REQtMjk1OUMxQUFFMUQy" title="PDDikti">
-                        <img alt="PDDikti" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
-                      </a>
+        <div class="container-konten gap-5">
+          <div class="container">
+            <h2 class="section-title fw-bold">Tenaga Kependidikan</h2>
+            <div class="hightlight-news d-flex my-3 flex-wrap">
+              <div class="container my-5">
+                <div class="row justify-content-around align-items-center g-md-5 g-3">
+                  <div class="col-lg-4 col-sm-5">
+                    <div class="card">
+                      <img class="foto-dosen" src="https://via.placeholder.com/150" alt="Foto Profil">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Nama Lengkap</h3>
+                        <p class="card-text">Pendidikan</p>
+                        <p class="card-text">S1-Universitas Riau <br> S2-Universitas Riau</p>
+                        <p class="card-text">Bidang Keahlian</p>
+                        <p class="card-text">Internet of Things<br>Software Engineering<br>UI/UX</p>
+                        <div class="link-dosen">
+                          <a target="_blank" class="linksocial-dosen" href="https://www.edisusilo.com/" title="www.edisusilo.com">
+                            <img alt="www.edisusilo.com" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/website.png">
+                          </a>
+                          <a target="_blank" class="linksocial-dosen" href="https://sinta.ristekbrin.go.id/authors/detail?id=6723247&amp;view=overview" title="SINTA">
+                            <img alt="SINTA" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
+                          </a>
+                          <a target="_blank" class="linksocial-dosen" href="https://pddikti.kemdikbud.go.id/data_dosen/RDFFRjdCOUQtRkM5My00NzlFLTk4REQtMjk1OUMxQUFFMUQy" title="PDDikti">
+                            <img alt="PDDikti" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-5">
-                <div class="card">
-                  <img class="foto-dosen" src="https://via.placeholder.com/150" alt="Foto Profil">
-                  <div class="card-body text-center">
-                    <h3 class="card-title">Nama Lengkap</h3>
-                    <p class="card-text">Pendidikan</p>
-                    <p class="card-text">S1-Universitas Riau <br> S2-Universitas Riau</p>
-                    <p class="card-text">Bidang Keahlian</p>
-                    <p class="card-text">Internet of Things<br>Software Engineering<br>UI/UX</p>
-                    <div class="link-dosen">
-                      <a target="_blank" class="linksocial-dosen" href="https://www.edisusilo.com/" title="www.edisusilo.com">
-                        <img alt="www.edisusilo.com" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/website.png">
-                      </a>
-                      <a target="_blank" class="linksocial-dosen" href="https://sinta.ristekbrin.go.id/authors/detail?id=6723247&amp;view=overview" title="SINTA">
-                        <img alt="SINTA" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
-                      </a>
-                      <a target="_blank" class="linksocial-dosen" href="https://pddikti.kemdikbud.go.id/data_dosen/RDFFRjdCOUQtRkM5My00NzlFLTk4REQtMjk1OUMxQUFFMUQy" title="PDDikti">
-                        <img alt="PDDikti" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
-                      </a>
+                  <div class="col-lg-4 col-sm-5">
+                    <div class="card">
+                      <img class="foto-dosen" src="https://via.placeholder.com/150" alt="Foto Profil">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Nama Lengkap</h3>
+                        <p class="card-text">Pendidikan</p>
+                        <p class="card-text">S1-Universitas Riau <br> S2-Universitas Riau</p>
+                        <p class="card-text">Bidang Keahlian</p>
+                        <p class="card-text">Internet of Things<br>Software Engineering<br>UI/UX</p>
+                        <div class="link-dosen">
+                          <a target="_blank" class="linksocial-dosen" href="https://www.edisusilo.com/" title="www.edisusilo.com">
+                            <img alt="www.edisusilo.com" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/website.png">
+                          </a>
+                          <a target="_blank" class="linksocial-dosen" href="https://sinta.ristekbrin.go.id/authors/detail?id=6723247&amp;view=overview" title="SINTA">
+                            <img alt="SINTA" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
+                          </a>
+                          <a target="_blank" class="linksocial-dosen" href="https://pddikti.kemdikbud.go.id/data_dosen/RDFFRjdCOUQtRkM5My00NzlFLTk4REQtMjk1OUMxQUFFMUQy" title="PDDikti">
+                            <img alt="PDDikti" src="https://informatika.ft.unri.ac.id/wp-content/plugins/team-members/inc/img/links/customlink.png">
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div id="sidebar"></div>
         </div>
       </div>
       <button class="btn btn-primary" id="back-to-top">

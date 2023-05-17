@@ -18,6 +18,7 @@
         $('#banner').load('banner.html', function(){
           $('#content').text('Tujuan');
         });
+        $('#sidebar').load('sidebar.html');
         $('#footer').load('footer.html');
       });
     </script>
@@ -30,21 +31,27 @@
     <div id="banner"></div>
     <main>
       <div class="content container my-5 vw-100">
-        <h2 class="section-title fw-bold mt-5">Tujuan</h2>
-        <ol type="1" >
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan berkualitas dengan kemampuan mengaplikasikan ilmu dasar, matematika, komputer dan informasi teknologi untuk menyelesaikan persoalan-persoalan teknis teknologi informasi dan pengelolaannya.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki daya saing tinggi dan keunggulan sehingga mampu bersaing dengan lulusan perguruan tinggi lain.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang bermoral dalam kehidupan bermasyarakat dan beragama.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang berkemampuanuntuk melanjutkan studi pada jenjang yang lebih tinggi.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki kemampuan untuk mengembangkan keprofesionalan, seperti berkomunikasi, bekerja dalam tim, mengerti kode etik profesi serta dapat menjadi seorang wirausaha tangguh.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan dengan kemampuan untuk memenuhi tantangan zaman yang berkembang secara cepat dan kompleks, dan kesadaran akan dampak teknologi terhadap masyarakat.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki kemampuan mengembangkan dan menyebarluaskan ilmu pengetahuan dan teknologi, terutama dalam kajian Ilmu Komputer, Sistem dan Teknologi Informasi serta mengupayakan penggunaannya untuk meningkatkan kesejahteraan umat manusia.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki kemampuan terkini dalam bidang ilmu Teknik Informatika.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki pengetahuan ilmu Teknik Informatika dan siap bersaing secara Nasional dan Internasional.</li>
-          <li class="isi mb-0 mt-1 list">Mendukung pembangunan masyarakat melalui penemuan-penemuan dalam bidang ilmu Teknik Informatika.</li>
-          <li class="isi mb-0 mt-1 list">Menghasilkan publikasi dengan kualitas yang baik dan diakui secara Nasional maupun Internasional.</li>
-        </ol>
+        <div class="container-konten gap-5">
+          <div class="container">
+            <h2 class="section-title fw-bold mt-5">Tujuan</h2>
+            <ol type="1" >
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan berkualitas dengan kemampuan mengaplikasikan ilmu dasar, matematika, komputer dan informasi teknologi untuk menyelesaikan persoalan-persoalan teknis teknologi informasi dan pengelolaannya.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki daya saing tinggi dan keunggulan sehingga mampu bersaing dengan lulusan perguruan tinggi lain.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang bermoral dalam kehidupan bermasyarakat dan beragama.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang berkemampuanuntuk melanjutkan studi pada jenjang yang lebih tinggi.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki kemampuan untuk mengembangkan keprofesionalan, seperti berkomunikasi, bekerja dalam tim, mengerti kode etik profesi serta dapat menjadi seorang wirausaha tangguh.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan dengan kemampuan untuk memenuhi tantangan zaman yang berkembang secara cepat dan kompleks, dan kesadaran akan dampak teknologi terhadap masyarakat.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki kemampuan mengembangkan dan menyebarluaskan ilmu pengetahuan dan teknologi, terutama dalam kajian Ilmu Komputer, Sistem dan Teknologi Informasi serta mengupayakan penggunaannya untuk meningkatkan kesejahteraan umat manusia.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki kemampuan terkini dalam bidang ilmu Teknik Informatika.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan lulusan yang memiliki pengetahuan ilmu Teknik Informatika dan siap bersaing secara Nasional dan Internasional.</li>
+              <li class="isi mb-0 mt-1 list">Mendukung pembangunan masyarakat melalui penemuan-penemuan dalam bidang ilmu Teknik Informatika.</li>
+              <li class="isi mb-0 mt-1 list">Menghasilkan publikasi dengan kualitas yang baik dan diakui secara Nasional maupun Internasional.</li>
+            </ol>
+          </div>
+          <div id="sidebar"></div>
+        </div>
       </div>
+      
       <button class="btn btn-primary" id="back-to-top">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--expand-less ipc-icon--inline ipc-chip__pre-icon" id="iconContext-expand-less" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11.29 8.71L6.7 13.3a.996.996 0 1 0 1.41 1.41L12 10.83l3.88 3.88a.996.996 0 1 0 1.41-1.41L12.7 8.71a.996.996 0 0 0-1.41 0z"></path>
         </svg>

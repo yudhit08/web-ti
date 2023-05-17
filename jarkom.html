@@ -15,10 +15,11 @@
     <script>
       $(function () {
         $('#header').load('header.html');
-        $('#banner').load('banner.html', function(){
-          $('#content').text('Lab. Jaringan dan Komputer');
-        });
-        $('#footer').load('footer.html');
+            $('#banner').load('banner.html', function(){
+            $('#content').text('Lab. Komputer dan Jaringan ');
+            });
+            $('#sidebar').load('sidebar.html');
+            $('#footer').load('footer.html');
       });
     </script>
   </script>
@@ -30,17 +31,22 @@
     <div id="banner"></div>
     <main>
       <div class="content container my-5 vw-100">
-        <h2 class="section-title fw-bold">Laboratorium Komputer dan Jaringan </h2>
-          <p class="isi mb-0 mt-3">
-            Laboratorium Komputer dan Jaringan ini digunakan untuk kegiatan pratikum mahasiswa pada matakuliah seputar jaringan komputer. Laboratorium Komputer dan Jaringan terdapat beberapa komputer dan juga peralatan yang dibutuhkan untuk kegiatan pratikum dan riset. Laboratorium Komputer dan Jaringan dikelola oleh:
-          </p>
-          <ol type="" >
-            <li class="isi mb-0 mt-1 bullet">Linna Oktaviana Sari, ST., MT. (Kepala Laboratorium)</li>
-            <li class="isi mb-0 mt-1 bullet">Jatwoko, ST (PLP Laboratorium)</li>
-          </ol>
-          <h5 class="fw-bold opacity-75">Galeri 360</h5>
-          <iframe src="https://informatika.ft.unri.ac.id/file/virtualtour-ti/" frameborder="0" width="100%" height="300px"></iframe>
+        <div class="container-konten gap-5">
+          <div class="container">
+              <h2 class="section-title fw-bold">Laboratorium Komputer dan Jaringan </h2>
+                <p class="isi mb-0 mt-3">
+                  Lab. Komputer dan Jaringan ini digunakan untuk kegiatan pratikum mahasiswa pada matakuliah seputar jaringan komputer. Laboratorium Komputer dan Jaringan terdapat beberapa komputer dan juga peralatan yang dibutuhkan untuk kegiatan pratikum dan riset. Laboratorium Komputer dan Jaringan dikelola oleh:
+                </p>
+                <ol type="" >
+                  <li class="isi mb-0 mt-1 bullet">Linna Oktaviana Sari, ST., MT. (Kepala Laboratorium)</li>
+                  <li class="isi mb-0 mt-1 bullet">Jatwoko, ST (PLP Laboratorium)</li>
+                </ol>
+                <h5 class="fw-bold opacity-75">Galeri 360</h5>
+                <iframe src="https://informatika.ft.unri.ac.id/file/virtualtour-ti/" frameborder="0" width="100%" height="300px"></iframe>
+            </div>
+          <div id="sidebar"></div>
         </div>
+      </div>
         
         
       <button class="btn btn-primary" id="back-to-top">

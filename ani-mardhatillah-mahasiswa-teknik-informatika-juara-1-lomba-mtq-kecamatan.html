@@ -15,6 +15,9 @@
     <script>
       $(function () {
         $('#header').load('header.html');
+        $('#banner').load('banner.html', function(){
+          $('#content').text('Prestasi Mahasiswa');
+        });
         $('#footer').load('footer.html');
       });
     </script>
@@ -22,6 +25,7 @@
   </head>
   <body>
     <div id="header"></div>
+    <div id="banner"></div>
 
     <main class="berita-container container d-flex flex-wrap">
         <div class="berita w-75 pe-xl-2">

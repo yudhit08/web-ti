@@ -331,18 +331,6 @@ button.readmore-btn:hover i {
 .menu-footer-laman > a {
   font-size: 1.1rem;
 }
-
-.menu-footer-laman > a:hover {
-  color: var(--orange);
-}
-
-.menu-footer-laman > a::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-}
 .menu-footer-laman2 {
   margin-top: 20px;
   display: flex;
@@ -391,15 +379,13 @@ p.isi li.isi {
   opacity: 0.7;
 }
 .link-dosen {
-  display: block;
-  text-align: center;
+  display: inline-flex;
+  margin: auto;
+  
 }
-.linksocial-dosen {
-  display: inline-block;
-  border: none;
-  width: 24px;
-  height: 24px;
-  margin-top: 10px;
+.link-dosen i{
+  color: #1a2c43;
+  
 }
 .foto-dosen {
   border-radius: 50%;
@@ -441,7 +427,8 @@ p.isi li.isi {
   margin-top: 50px;
   display: grid;
   grid-template-columns: 40% 60%;
-  gap: 20px;
+  gap: 0px;
+  background-color: #f8f9fb;
 }
 
 .berita-box h3 {
@@ -454,7 +441,7 @@ p.isi li.isi {
 }
 
 .img-box {
-  height: 300px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -483,8 +470,53 @@ p.isi li.isi {
   background-color: var(--dark-blue);
   color: #ffffff;
 }
+.container-konten {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+#sidebar {
+  margin-top: 50px;
+  flex-basis: 450px;
+  padding: 20px;
+  background-color: #f8f9fb;
+  height: fit-content;
+  color: #073c64;
+
+}.sidebar ul
+{
+  padding: 20px;
+}
+.link-sidebar{
+  padding: 20px 0px 20px 0px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255, 181, 44);
+  border-width: 1px;
+  pointer-events: pointer;
+}
+.link-sidebar a{
+  color:#073c64;
+}
+.link-sidebar span{
+    padding-left: 10px;
+    color: rgb(255, 181, 44);   
+}
+.link-sidebar:hover{
+  opacity: .7;
+}
+.ket-box{
+  padding: 25px;
+}
 
 @media screen and (max-width: 992px) {
+  .ket-box{
+    padding-top: 10px;
+  }
   .banner-kontainer img {
     width: 40px;
   }
@@ -670,5 +702,13 @@ p.isi li.isi {
   }
   .small-img {
     display: none;
+  }
+  .container-konten {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    flex-basis: auto;
+    margin-top: 20px;
   }
 }
