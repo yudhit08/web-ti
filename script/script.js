@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
 
 		if (
 			topHeader &&
-			banner &&
+			// banner &&
 			topHeaderMobile &&
 			topHeaderToggle &&
 			btmHeaderMobile &&
@@ -97,7 +97,7 @@ window.addEventListener("load", () => {
 	);
 
 	parentDropdown.forEach((dropdownItem, i) => {
-        console.log(dropdownItem.lastElementChild)
+        // console.log(dropdownItem.lastElementChild)
 		dropdownItem.addEventListener("mouseover", () => {
             dropdownItem.lastElementChild.style.display = "flex"
 		});
