@@ -14,19 +14,18 @@ window.addEventListener("load", () => {
 	const btmHeaderMobile =
 		document.getElementsByClassName("navbar-btm-menu")[0];
 
+	window.addEventListener("scroll", function () {
+		if (window.pageYOffset > 100) {
+			btn.style.display = "block";
+		} else {
+			btn.style.display = "none";
+		}
+	});
+
+	btn.addEventListener("click", function () {
+		window.scrollTo(0, 0);
+	});
 	function handleHeader() {
-		// window.addEventListener("scroll", function () {
-		//     if (window.pageYOffset > 100) {
-		//         btn.style.display = "block";
-		//     } else {
-		//         btn.style.display = "none";
-		//     }
-		// });
-
-		// btn.addEventListener("click", function () {
-		//     window.scrollTo(0, 0);
-		// });
-
 		if (
 			topHeader &&
 			// banner &&
@@ -97,12 +96,12 @@ window.addEventListener("load", () => {
 	);
 
 	parentDropdown.forEach((dropdownItem, i) => {
-        // console.log(dropdownItem.lastElementChild)
+		// console.log(dropdownItem.lastElementChild)
 		dropdownItem.addEventListener("mouseover", () => {
-            dropdownItem.lastElementChild.style.display = "flex"
+			dropdownItem.lastElementChild.style.display = "flex";
 		});
-        dropdownItem.addEventListener("mouseout", () => {
-            dropdownItem.lastElementChild.style.display = "none"
+		dropdownItem.addEventListener("mouseout", () => {
+			dropdownItem.lastElementChild.style.display = "none";
 		});
 	});
 
