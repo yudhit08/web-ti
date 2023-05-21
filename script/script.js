@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
 		document.getElementsByClassName("navbar-btm-menu")[0];
 
 	window.addEventListener("scroll", function () {
-		if (window.pageYOffset > 100) {
+		if (window.pageYOffset > 200) {
 			btn.style.display = "block";
 		} else {
 			btn.style.display = "none";
