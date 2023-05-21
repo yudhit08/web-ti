@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./style/isi-berita.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#banner').load('banner.html', function(){
+          $('#content').text('Event');
+        });
+        $('#footer').load('footer.html');
+        $('#sidebar').load('sidebar.html');
+      });
+    </script>
+    <title>FGA 2022</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="banner"></div>
+    <main>
+      <div class="content container my-5 vw-100">
+        <div class="container-konten">
+          <div class="container">
+            <div class="berita me-5 pe-xl-2">
+              <h2 class="fw-bold">Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) 2022</h2>
+              <div class="ket d-flex gap-5">
+                  <p><i class="fa fa-calendar me-2"></i>13 Juli 2023</p>
+                  <p><i class="fa fa-user me-2"></i> Dian Ramadhani</p>
+              </div>
+              <img src="./assets/image/berita3.jpg" style="width: 100%;" alt="">
+              <p class="mt-3 isi">Program Studi Teknik Informatika Universitas Riau kembali bekerja sama dengan Kementerian Komunikasi dan Informatika RI menyelenggarakan Program Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) Tahun 2022. Tahun ini,  pelatihan terselenggara di 57 Perguruan Tinggi baik negeri maupun swasta yang tersebar di seluruh Indonesia.  Universitas Riau (UNRI) merupakan salah satu mitra Kominfo untuk menyelenggarakan pelatihan mulai tahun 2020. Ada 8 kelas yang diselenggarakan.  Universitas Riau berhasil memaksimal rekrutmen peserta dan  menjadi Universitas nomor tiga terbanyak dalam proses rekrutmen peserta diatara kampus mitra kominfo.</p>
+              <p class="isi ">Adapun tema pelatihan yang diselenggarakan di Universitas Riau tahun 2022 ada 7 bidang,  yaitu</p>
+              <ol type="1">
+                <li class="isi mb-0 mt-1 list">Java Programming kelas I dan II</li>
+                <li class="isi mb-0 mt-1 list">Database Design and Programming with SQL</li>
+                <li class="isi mb-0 mt-1 list">CCNA Network Engineer</li>
+                <li class="isi mb-0 mt-1 list">Cyber Security Operations</li>
+                <li class="isi mb-0 mt-1 list">Project Management with Primavera</li>
+                <li class="isi mb-0 mt-1 list">Data Communication</li>
+                <li class="isi mb-0 mt-1 list">Bigdata using Python</li>
+              </ol>
+              <p class="isi">Orientasi program FGA-DTS Universitas Riau (UNRI) dilaksanakan pada hari Rabu tanggal 13 Juli 2022 secara daring menggunakan aplikasi Zoom. Acara dimulai jam 13.30 dengan Sambutan dari Ketua Prodi sekaligus PIC Acara Dr. Feri Candra, S.T.,M.T, Kemudian sambutan dari Bu Eyla, sebagai perwakilan Tim Pokja FGA DTS Kominfo dan selanjutnya Dekan Fakultas Teknik Universitas Riau Prof.Dr.Eng.Ir.Adrijal Aziz, M.T, IPU sekaligus membuka acara secara resmi. Acara ini dihadiri oleh seluruh peserta FGA-DTS UNRI para Instruktur pelatihan, Perwakilan kominfo, Dekan, Ketua Jurusan Elektro dan Panitia.</p>
+              <div class="social-icons mb-4 justify-content-center d-flex gap-3 pt-4">
+                <a href="#" class="social-item">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="social-item">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-item">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            
+            </div>
+          </div>
+          <div>
+            <div id="sidebar"></div>
+            <div class="sidebar">
+              <h4 class="title fw-semibold"><span><i class="fa fa-newspaper"></i></span> Berita Terkait</h4>
+              <ul>
+                <div class="link-sidebar"><a href="hakim-atta-attaturk.html"> Hakim Ata Attaturk; Mahasiswa Teknik Informatika UNRI Juara 4 Bujang Dara Pekanbaru<span><i class="fa fa-chevron-right"></i></a></i></div>
+                  <div class="link-sidebar"><a href="event-kuliah-umum-data-analytics.html"> KULIAH UMUM : Data Analytics for Health Sector <span><i class="fa fa-chevron-right"></i></a></i></div>
+                  <div class="link-sidebar"><a href="dzikri-armansyah-mahasiswa-teknik-informatika-unri-juara-1.html"> Dzikri Armansyah; Mahasiswa Teknik Informatika UNRI Juara 1 Bujang Dara Kampar <span><i class="fa fa-chevron-right"></i></a></i></div>
+                  <div class="link-sidebar"><a href="ani-mardhatillah-mahasiswa-teknik-informatika-juara-1-lomba-mtq-kecamatan.html"> Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan"></i></a></i></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="./script/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

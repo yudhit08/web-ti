@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./style/isi-berita.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#banner').load('banner.html', function(){
+          $('#content').text('Event');
+        });
+        $('#footer').load('footer.html');
+        $('#sidebar').load('sidebar.html');
+      });
+    </script>
+    <title>Kuliah Umum Data Analytics</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="banner"></div>
+
+    <main>
+      <div class="content container my-5 vw-100">
+        <div class="container-konten">
+          <div class="container">
+            <div class="berita me-5 pe-xl-2">
+              <h2 class="fw-bold">KULIAH UMUM : Data Analytics for Health Sector</h2>
+              <div class="ket d-flex gap-5">
+                  <p><i class="fa fa-calendar me-2"></i>17 Juni 2023</p>
+                  <p><i class="fa fa-user me-2"></i> Dian Ramadhani</p>
+              </div>
+              <img src="./assets/image/berita2 2.jpg" style="width: 100%;" alt="">
+              <p class="mt-3 isi">Jurusan Teknik Elektro Program Studi Teknik Informatika yang bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar (kuliah umum) yang merupakan agenda tahunan program studi teknik informatika. Topik kuliah umum ini adalah data analytics yang berkaitan dengan sektor kesehatan, berdasarkan fenomena pandemi covid-19.  Kegiatan ini di mulai dengan kata sambutan oleh Kaprodi Teknik Informatika Universitas Riau oleh Dr. Feri Candra, S.T.,M.T, kata sambutan oleh kepala jurusan Teknik Elektro oleh Anhar, S.T.,M.T.,Ph.D dan dilanjutkan dengan kata sambutan sekaligus pembukaan kegiatan kuliah umum oleh dekan teknik Universitas Riau Prof.Dr. Eng. Azridjal Aziz, , S.T., M.T.</p>
+              <p class="isi ">Kuliah umum diadakan secara virtual menggunakan Zoom Meeting pada tanggal 17 Juni 2022 di pandu oleh MC Yulmaisi Dwi Asmarita dan moderator oleh Dr. Irsan Taufik Ali, S.T., M.T dengan pemaparan materi kuliah umum yang di sampaikan oleh Prof. Ts. Dr. Mira Kartiwi yang merupakan Director, Center of Professional Development IIUM Malaysia yang mendapat sambutan yang cukup antusias dari Mahasiswa khususnya yang mengikuti kuliah umum.</p>
+              <p class="isi">Materi yang disampaikan narasumber menjelaskan betapa pentingnya Data Analytics pada era ini. Semakin banyak data, semakin banyak informasi namun masih sedikit yang mengerti nilai pentingnya sebuah data. Data analytics dapat membantu bisnis menganalisis data dalam volume besar dan memperlihatkan insight ke seluruh tim sehingga memiliki pandangan menyeluruh terkait pekerjaan apa yang perlu dilakukan dan diproritaskan untuk meningkatkan efisiensi. Covid-19 menjadi alarm yang luar biasa impactnya untuk kita di berbagai sektor termasuk ekonomi dan kesehatan.</p>
+              <p class="isi">Menurut narasumber, Indonesia merupakan salah satu negara yang memiliki open data terbesar sehingga banyak proses digitalisasi di Indonesia yang dapat diteliti. Banyak talent yang mampu secara teknik (menguasai software) namun masih minim pengetahuan mengenai data dan critical thinking. Tidak semua data yang dimiliki dapat dimanfaatkan, berkaitan dengan nilainya. Semakin banyak belajar, kita akan mendapatkan ilmu-ilmu baru. Oleh karena itu, narasumber mengajak peserta agar jangan berhenti untuk belajar. Hal terpenting dalam mempelajari data adalah bagaimana merubah paradigma datanya.</p>
+              <p class="isi">Kegiatan kuliah umum ini di tutup dengan pertanyaan-pertanyaan dan langsung di jawab oleh Prof. Ts. Dr. Mira Kartiwi. Kegiatan ini berjalan dengan sangat lancar dan khidmat.</p>
+              <div class="social-icons mb-4 justify-content-center d-flex gap-3 pt-4">
+                <a href="#" class="social-item">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="social-item">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-item">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            
+            </div>
+          </div>
+          <div>
+            <div id="sidebar"></div>
+            <div class="sidebar">
+              <h4 class="title fw-semibold"><span><i class="fa fa-newspaper"></i></span> Berita Terkait</h4>
+              <ul>
+                <div class="link-sidebar"><a href="hakim-atta-attaturk.html"> Hakim Ata Attaturk; Mahasiswa Teknik Informatika UNRI Juara 4 Bujang Dara Pekanbaru<span><i class="fa fa-chevron-right"></i></a></i></div>
+                  <div class="link-sidebar"><a href="event-fga-dts-2022.html"> Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) 2022 <span><i class="fa fa-chevron-right"></i></a></i></div>
+                  <div class="link-sidebar"><a href="dzikri-armansyah-mahasiswa-teknik-informatika-unri-juara-1.html"> Dzikri Armansyah; Mahasiswa Teknik Informatika UNRI Juara 1 Bujang Dara Kampar <span><i class="fa fa-chevron-right"></i></a></i></div>
+                  <div class="link-sidebar"><a href="ani-mardhatillah-mahasiswa-teknik-informatika-juara-1-lomba-mtq-kecamatan.html"> Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan"></i></a></i></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="./script/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
